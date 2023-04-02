@@ -1032,7 +1032,7 @@ def groupby_metric(iterable: dict[str, list], key: str):
 
 
 def get_table_name(table_name: str) -> str:
-	return f"tab{table_name}" if not table_name.startswith("__") else table_name
+	return f"`tab{table_name}`" if not table_name.startswith("__") else table_name
 
 
 def squashify(what):
